@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C670BCD2232819A000EB84F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C670BCC2232819A000EB84F /* AppDelegate.mm */; };
+		1C670BD02232819A000EB84F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C670BCF2232819A000EB84F /* ViewController.mm */; };
+		1C670BD32232819A000EB84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C670BD12232819A000EB84F /* Main.storyboard */; };
+		1C670BD52232819C000EB84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C670BD42232819C000EB84F /* Assets.xcassets */; };
+		1C670BD82232819C000EB84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C670BD62232819C000EB84F /* LaunchScreen.storyboard */; };
+		1C670BDB2232819C000EB84F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C670BDA2232819C000EB84F /* main.m */; };
+		1C670BE52232819C000EB84F /* OpenCVMosaicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C670BE42232819C000EB84F /* OpenCVMosaicTests.m */; };
+		1C670BF02232819C000EB84F /* OpenCVMosaicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C670BEF2232819C000EB84F /* OpenCVMosaicUITests.m */; };
+		1C670BFE223281C5000EB84F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C670BFD223281C5000EB84F /* opencv2.framework */; };
+		1C670C0222328336000EB84F /* MosaicTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C670C0122328336000EB84F /* MosaicTool.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C670BE12232819C000EB84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C670BC02232819A000EB84F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C670BC72232819A000EB84F;
+			remoteInfo = OpenCVMosaic;
+		};
+		1C670BEC2232819C000EB84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C670BC02232819A000EB84F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C670BC72232819A000EB84F;
+			remoteInfo = OpenCVMosaic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C670BC82232819A000EB84F /* OpenCVMosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVMosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C670BCB2232819A000EB84F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1C670BCC2232819A000EB84F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		1C670BCE2232819A000EB84F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1C670BCF2232819A000EB84F /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		1C670BD22232819A000EB84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C670BD42232819C000EB84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C670BD72232819C000EB84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C670BD92232819C000EB84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C670BDA2232819C000EB84F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C670BE02232819C000EB84F /* OpenCVMosaicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVMosaicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C670BE42232819C000EB84F /* OpenCVMosaicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVMosaicTests.m; sourceTree = "<group>"; };
+		1C670BE62232819C000EB84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C670BEB2232819C000EB84F /* OpenCVMosaicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVMosaicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C670BEF2232819C000EB84F /* OpenCVMosaicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCVMosaicUITests.m; sourceTree = "<group>"; };
+		1C670BF12232819C000EB84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C670BFD223281C5000EB84F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		1C670C0022328336000EB84F /* MosaicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MosaicTool.h; sourceTree = "<group>"; };
+		1C670C0122328336000EB84F /* MosaicTool.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MosaicTool.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C670BC52232819A000EB84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C670BFE223281C5000EB84F /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C670BDD2232819C000EB84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C670BE82232819C000EB84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C670BBF2232819A000EB84F = {
+			isa = PBXGroup;
+			children = (
+				1C670BFD223281C5000EB84F /* opencv2.framework */,
+				1C670BCA2232819A000EB84F /* OpenCVMosaic */,
+				1C670BE32232819C000EB84F /* OpenCVMosaicTests */,
+				1C670BEE2232819C000EB84F /* OpenCVMosaicUITests */,
+				1C670BC92232819A000EB84F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C670BC92232819A000EB84F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C670BC82232819A000EB84F /* OpenCVMosaic.app */,
+				1C670BE02232819C000EB84F /* OpenCVMosaicTests.xctest */,
+				1C670BEB2232819C000EB84F /* OpenCVMosaicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C670BCA2232819A000EB84F /* OpenCVMosaic */ = {
+			isa = PBXGroup;
+			children = (
+				1C670BFF2232831E000EB84F /* Tool */,
+				1C670BCB2232819A000EB84F /* AppDelegate.h */,
+				1C670BCC2232819A000EB84F /* AppDelegate.mm */,
+				1C670BCE2232819A000EB84F /* ViewController.h */,
+				1C670BCF2232819A000EB84F /* ViewController.mm */,
+				1C670BD12232819A000EB84F /* Main.storyboard */,
+				1C670BD42232819C000EB84F /* Assets.xcassets */,
+				1C670BD62232819C000EB84F /* LaunchScreen.storyboard */,
+				1C670BD92232819C000EB84F /* Info.plist */,
+				1C670BDA2232819C000EB84F /* main.m */,
+			);
+			path = OpenCVMosaic;
+			sourceTree = "<group>";
+		};
+		1C670BE32232819C000EB84F /* OpenCVMosaicTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C670BE42232819C000EB84F /* OpenCVMosaicTests.m */,
+				1C670BE62232819C000EB84F /* Info.plist */,
+			);
+			path = OpenCVMosaicTests;
+			sourceTree = "<group>";
+		};
+		1C670BEE2232819C000EB84F /* OpenCVMosaicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C670BEF2232819C000EB84F /* OpenCVMosaicUITests.m */,
+				1C670BF12232819C000EB84F /* Info.plist */,
+			);
+			path = OpenCVMosaicUITests;
+			sourceTree = "<group>";
+		};
+		1C670BFF2232831E000EB84F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				1C670C0022328336000EB84F /* MosaicTool.h */,
+				1C670C0122328336000EB84F /* MosaicTool.mm */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C670BC72232819A000EB84F /* OpenCVMosaic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C670BF42232819C000EB84F /* Build configuration list for PBXNativeTarget "OpenCVMosaic" */;
+			buildPhases = (
+				1C670BC42232819A000EB84F /* Sources */,
+				1C670BC52232819A000EB84F /* Frameworks */,
+				1C670BC62232819A000EB84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVMosaic;
+			productName = OpenCVMosaic;
+			productReference = 1C670BC82232819A000EB84F /* OpenCVMosaic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C670BDF2232819C000EB84F /* OpenCVMosaicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C670BF72232819C000EB84F /* Build configuration list for PBXNativeTarget "OpenCVMosaicTests" */;
+			buildPhases = (
+				1C670BDC2232819C000EB84F /* Sources */,
+				1C670BDD2232819C000EB84F /* Frameworks */,
+				1C670BDE2232819C000EB84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C670BE22232819C000EB84F /* PBXTargetDependency */,
+			);
+			name = OpenCVMosaicTests;
+			productName = OpenCVMosaicTests;
+			productReference = 1C670BE02232819C000EB84F /* OpenCVMosaicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C670BEA2232819C000EB84F /* OpenCVMosaicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C670BFA2232819C000EB84F /* Build configuration list for PBXNativeTarget "OpenCVMosaicUITests" */;
+			buildPhases = (
+				1C670BE72232819C000EB84F /* Sources */,
+				1C670BE82232819C000EB84F /* Frameworks */,
+				1C670BE92232819C000EB84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C670BED2232819C000EB84F /* PBXTargetDependency */,
+			);
+			name = OpenCVMosaicUITests;
+			productName = OpenCVMosaicUITests;
+			productReference = 1C670BEB2232819C000EB84F /* OpenCVMosaicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C670BC02232819A000EB84F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Mae;
+				TargetAttributes = {
+					1C670BC72232819A000EB84F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1C670BDF2232819C000EB84F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1C670BC72232819A000EB84F;
+					};
+					1C670BEA2232819C000EB84F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1C670BC72232819A000EB84F;
+					};
+				};
+			};
+			buildConfigurationList = 1C670BC32232819A000EB84F /* Build configuration list for PBXProject "OpenCVMosaic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C670BBF2232819A000EB84F;
+			productRefGroup = 1C670BC92232819A000EB84F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C670BC72232819A000EB84F /* OpenCVMosaic */,
+				1C670BDF2232819C000EB84F /* OpenCVMosaicTests */,
+				1C670BEA2232819C000EB84F /* OpenCVMosaicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C670BC62232819A000EB84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C670BD82232819C000EB84F /* LaunchScreen.storyboard in Resources */,
+				1C670BD52232819C000EB84F /* Assets.xcassets in Resources */,
+				1C670BD32232819A000EB84F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C670BDE2232819C000EB84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C670BE92232819C000EB84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C670BC42232819A000EB84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C670BD02232819A000EB84F /* ViewController.mm in Sources */,
+				1C670C0222328336000EB84F /* MosaicTool.mm in Sources */,
+				1C670BDB2232819C000EB84F /* main.m in Sources */,
+				1C670BCD2232819A000EB84F /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C670BDC2232819C000EB84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C670BE52232819C000EB84F /* OpenCVMosaicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C670BE72232819C000EB84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C670BF02232819C000EB84F /* OpenCVMosaicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C670BE22232819C000EB84F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C670BC72232819A000EB84F /* OpenCVMosaic */;
+			targetProxy = 1C670BE12232819C000EB84F /* PBXContainerItemProxy */;
+		};
+		1C670BED2232819C000EB84F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C670BC72232819A000EB84F /* OpenCVMosaic */;
+			targetProxy = 1C670BEC2232819C000EB84F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C670BD12232819A000EB84F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C670BD22232819A000EB84F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C670BD62232819C000EB84F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C670BD72232819C000EB84F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C670BF22232819C000EB84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C670BF32232819C000EB84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C670BF52232819C000EB84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenCVMosaic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deepBlue.OpenCVMosaic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C670BF62232819C000EB84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenCVMosaic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deepBlue.OpenCVMosaic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C670BF82232819C000EB84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVMosaicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deepBlue.OpenCVMosaicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVMosaic.app/OpenCVMosaic";
+			};
+			name = Debug;
+		};
+		1C670BF92232819C000EB84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVMosaicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deepBlue.OpenCVMosaicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVMosaic.app/OpenCVMosaic";
+			};
+			name = Release;
+		};
+		1C670BFB2232819C000EB84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVMosaicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deepBlue.OpenCVMosaicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVMosaic;
+			};
+			name = Debug;
+		};
+		1C670BFC2232819C000EB84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVMosaicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deepBlue.OpenCVMosaicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVMosaic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C670BC32232819A000EB84F /* Build configuration list for PBXProject "OpenCVMosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C670BF22232819C000EB84F /* Debug */,
+				1C670BF32232819C000EB84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C670BF42232819C000EB84F /* Build configuration list for PBXNativeTarget "OpenCVMosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C670BF52232819C000EB84F /* Debug */,
+				1C670BF62232819C000EB84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C670BF72232819C000EB84F /* Build configuration list for PBXNativeTarget "OpenCVMosaicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C670BF82232819C000EB84F /* Debug */,
+				1C670BF92232819C000EB84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C670BFA2232819C000EB84F /* Build configuration list for PBXNativeTarget "OpenCVMosaicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C670BFB2232819C000EB84F /* Debug */,
+				1C670BFC2232819C000EB84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C670BC02232819A000EB84F /* Project object */;
+}
